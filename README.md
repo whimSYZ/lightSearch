@@ -1,5 +1,6 @@
 # lightSearch
 [![https://pkg.go.dev/github.com/whimSYZ/lightSearch](https://pkg.go.dev/badge/github.com/whimSYZ/lightSearch.svg)](https://pkg.go.dev/github.com/whimSYZ/lightSearch)
+[![Go Report Card](https://goreportcard.com/badge/github.com/whimSYZ/lightSearch)](https://goreportcard.com/report/github.com/whimSYZ/lightSearch)
 
 Full-text search in Go
 
