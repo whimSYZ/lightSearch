@@ -1,4 +1,6 @@
-# lightSearch - full-text search in Go
+# lightSearch
+
+Full-text search in Go
 
 ## Introduction
 lightSearch is a lightweight full-text search engine built for **Markdown** developed in Go. It has optimizations specifically for Markdown documentation such as interpreting Front matter.
