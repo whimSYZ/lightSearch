@@ -1,4 +1,4 @@
-module lightSearch
+module github.com/whimSYZ/lightSearch
 
 go 1.17
 
