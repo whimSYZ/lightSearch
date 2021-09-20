@@ -1,9 +1,11 @@
-package lightSearch
+package main
 
 // This is an english stemmer implementes PorterStemmer from https://github.com/agonopol/go-stem
 
-import "fmt"
-import "bytes"
+import (
+	"bytes"
+	"fmt"
+)
 
 func ingore() {
 	fmt.Sprintf("")
@@ -144,7 +146,7 @@ func two(body []byte) []byte {
 		if Measure(body[:len(body)-4]) > 0 {
 			return append(body[:len(body)-4], []byte("able")...)
 		}
-	// To match the published algorithm, delete the following phrase
+		// To match the published algorithm, delete the following phrase
 	} else if bytes.HasSuffix(body, []byte("bli")) {
 		if Measure(body[:len(body)-3]) > 0 {
 			return append(body[:len(body)-1], 'e')
@@ -205,7 +207,7 @@ func two(body []byte) []byte {
 		if Measure(body[:len(body)-6]) > 0 {
 			return append(body[:len(body)-6], []byte("ble")...)
 		}
-	// To match the published algorithm, delete the following phrase
+		// To match the published algorithm, delete the following phrase
 	} else if bytes.HasSuffix(body, []byte("logi")) {
 		if Measure(body[:len(body)-4]) > 0 {
 			return body[:len(body)-1]
@@ -356,9 +358,9 @@ func Stem(body []byte) []byte {
 }
 
 func stemmer(tokens []string) []string {
-    r := make([]string, len(tokens))
-    for i, token := range tokens {
-        r[i] = string(Stem([]byte(token)))
-    }
-    return r
+	r := make([]string, len(tokens))
+	for i, token := range tokens {
+		r[i] = string(Stem([]byte(token)))
+	}
+	return r
 }

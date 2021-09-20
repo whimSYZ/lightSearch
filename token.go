@@ -1,12 +1,12 @@
-package lightSearch
+package main
 
 type pair struct {
-    id      int
-    val   float64
+	id  int
+	val float64
 }
 
 type token struct {
-    str		string
-    docCount    int
-    indicies    map[int]pair
+	str      string
+	docCount int
+	indicies map[int]pair
 }

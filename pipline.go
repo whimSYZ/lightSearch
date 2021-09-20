@@ -1,11 +1,10 @@
-package lightSearch
+package main
 
 func pipline(text string) []string {
-    tokens := tokenize(text)
-    tokens = stopwordFilter(tokens)
-    tokens = lowercaseFilter(tokens)
-    tokens = stemmer(tokens)
+	tokens := tokenize(text)
+	tokens = stopwordFilter(tokens)
+	tokens = lowercaseFilter(tokens)
+	tokens = stemmer(tokens)
 
-    return tokens
+	return tokens
 }
-
