@@ -3,10 +3,17 @@
 ## What is this?
 lightSearch is a lightweight full-text search engine built for **Markdown** developed in Go.
 
-##Usage
+## Install
+-------
+
+    go get github.com/agnivade/levenshtein
+
+## Usage
 To use lightSearch, import it and:
 ```
-idx := load("./")
+func main() {
+    idx := load("./")
+}
 ```
 And search:
 ```
